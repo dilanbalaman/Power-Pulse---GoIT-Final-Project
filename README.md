@@ -1,33 +1,35 @@
 # Power-Pulse-GoIT-Final-Project
-# Power Pulse QA Test Süreci
+
+## Power Pulse QA Test Süreci
 
 Bu depo, **Power Pulse Web Uygulaması** için yürütülen kalite güvence (QA) çalışmalarına ait test planı, test raporları ve hata takibini içeren dökümantasyonu barındırmaktadır. Bu çalışmalar, GoIT Yazılım Test Uzmanlığı Kursu Final Projesi kapsamında gerçekleştirilmiştir.
 
-## 📋 İçerik
+---
+
+## 📄 İçerik
 
 Depoda bulunan başlıca belgeler:
 
-- `PowerPulse QA_Test_Plani.pdf`  
+- [PowerPulse QA_Test_Plani.pdf](./PowerPulse%20QA_Test_Plani.pdf)  
   → Test sürecine ait kapsam, strateji, roller, zaman çizelgesi ve risk değerlendirmesi.
 
-- `PowerPulse_Test_Raporu.pdf`  
+- [PowerPulse_Test_Raporu.pdf](./PowerPulse_Test_Raporu.pdf)  
   → Gerçekleştirilen UI ve API testlerinin sonuçları, grafikler, hata sayıları ve genel değerlendirme.
 
-- `BugBusters - PowerPulse Bug Raporları.xlsx`  
-  → Belirlenen tüm hataların kategorilere ayrılmış hali.
+- [BugBusters - PowerPulse Bug Raporları.xlsx](./BugBusters%20-%20PowerPulse%20Bug%20Raporları.xlsx)  
+  → Hataların detaylı listesi, durumları ve öncelik düzeyleri.
 
-- `BugBusters Trello Linki.docx`  
-  → Tüm QA sürecinin yönetildiği Trello pano bağlantısı.
+- [BugBusters Trello Linki.docx](./BugBusters%20Trello%20Linki.docx)  
+  → Proje sürecinin yönetildiği Trello panosu linki.
 
-## 🎯 Amaç
+---
 
-Bu proje, Power Pulse uygulamasının:
+## 🌐 Swagger API Dokümantasyonu
 
-- Kullanıcı Girişi, Kaydı ve Profil işlemleri
-- Ürün, Günlük (Diary) ve Egzersiz modülleri
-- API uç noktaları ve UI uyumluluğu
+Test edilen API uç noktaları için Swagger arayüzü:  
+🔗 [Swagger UI – Power Pulse](https://power-pulse-qa.f.goit.study/api-docs/)  
 
-gibi temel modüllerinin **manuel testler** yoluyla değerlendirilmesini ve raporlanmasını amaçlamaktadır.
+---
 
 ## 🛠️ Kullanılan Test Yöntemleri
 
@@ -37,45 +39,54 @@ gibi temel modüllerinin **manuel testler** yoluyla değerlendirilmesini ve rapo
 - Statik Kod Gözden Geçirme  
 - Veri Doğruluğu Testleri
 
-Testler çeşitli cihaz ve işletim sistemleri üzerinde gerçekleştirilmiştir (Windows 11, macOS Sequoia, Android 13, iOS 18).
+Testler aşağıdaki ortamlarda gerçekleştirilmiştir:
 
-## 📊 Test Sonuçları
-
-- Toplam Test Senaryosu: **410**  
-- Başarılı: **336**  
-- Başarısız: **68**  
-- Açılan Bug Sayısı: **68**
-
-Başarı oranı: **%83.2**  
-(Hataların çoğu düşük veya orta önceliklidir.)
-
-## 🧩 Öne Çıkan Bulgular
-
-- Kullanıcı deneyimi açısından yönlendirici mesaj eksiklikleri
-- API uç noktalarında dokümantasyon uyumsuzlukları
-- Login / Logout ve oturum yönetimi eksiklikleri
-- Test otomasyonuna geçiş ihtiyacı
-
-## 📅 Zaman Çizelgesi
-
-| Aşama                  | Tarih Aralığı           |
-|------------------------|--------------------------|
-| Test Planlama          | 11.06.2025 – 12.06.2025 |
-| Test Case Oluşturma    | 13.06.2025 – 19.06.2025 |
-| Testlerin Yürütülmesi  | 20.06.2025 – 24.06.2025 |
-| Raporlama & Kapanış    | 25.06.2025              |
-
-## 👥 Test Ekibi
-
-- **Scrum Master:** Damla Patterson  
-- **QA Team Lead:** Handan Çileli  
-- QA Engineers: Begüm Dökmetaş, Dilan Balaman, Gamze Merve Bal, Musa Eren Tanrıöver, Nuray Elmas
-
-## 📌 Ek Bilgiler
-
-- Test ortamı: [Power Pulse QA ortamı](https://power-pulse-qa.f.goit.study/)  
-- Trello yönetim panosu: `Trello Linki.docx` dosyasında yer almaktadır.
-
+- Windows 11, macOS Sequoia  
+- Android 13, iOS 18  
+- Chrome, Safari, Opera, Edge
 
 ---
 
+## 📊 Özet Test Sonuçları
+
+| Test Türü      | Test Case | Passed | Failed | Bug |
+|----------------|-----------|--------|--------|-----|
+| UI             | 351       | 291    | 60     | 60  |
+| API            | 53        | 45     | 8      | 8   |
+| Statik         | 6         | 0      | 0      | 0   |
+| **Toplam**     | **410**   | **336**| **68** | **68** |
+
+Başarı oranı: **%83.2**
+
+---
+
+## 👥 Ekip
+
+- **Scrum Master:** Damla Patterson  
+- **QA Team Lead:** Handan Çileli  
+- **QA Engineers:** Dilan Balaman, Begüm Dökmetaş, Gamze Merve Bal, Musa Eren Tanrıöver, Nuray Elmas
+
+---
+
+## 📅 Takvim
+
+| Aşama               | Tarih                  |
+|---------------------|------------------------|
+| Test Planlama       | 11.06.2025 – 12.06.2025 |
+| Test Case Yazımı    | 13.06.2025 – 19.06.2025 |
+| Test Yürütme        | 20.06.2025 – 24.06.2025 |
+| Raporlama           | 25.06.2025             |
+
+---
+
+## 📌 Notlar
+
+- Test otomasyonu henüz uygulanmamıştır. Manuel testler yürütülmüştür.  
+- Şifre yenileme ve oturum yönetimi gibi bazı alanlarda dokümantasyon eksiklikleri tespit edilmiştir.  
+- Tespit edilen hatalar Trello panosu üzerinden takip edilmektedir.
+
+---
+
+## ✅ Yayına Hazır mı?
+
+Genel olarak sistemin temel işlevleri beklentileri karşılamakta, kritik hataların çözülmesiyle birlikte uygulama yayına hazır hale gelebilir.
